@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>使用kendo-ui日期选择框限制指定日期不可选 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="需求分析:   限制双休日日期不可选 假期日不可选 三个工作日后的日期不可选(工作日需排除双休日和假期日)   使用kendo-ui可以完美实现这些要求，但是使用过程中有好多坑，不过参照我下面的写法就没问题，话不多说，直接上代码吧  首先，创建一个输入框用于kendo日期控件初始化日期选择框1&amp;lt;input id=&quot;date&quot;&amp;gt; 引入kendo-ui,由于kendo-ui是依赖于jQu">
+  <meta name="description" content="需求分析:   限制双休日日期不可选 假期日不可选 三个工作日后的日期不可选(工作日需排除双休日和假期日)   使用kendo-ui可以完美实现这些要求，但是使用过程中有好多坑，不过参照我下面的写法就没问题，话不多说，直接上代码吧">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用kendo-ui日期选择框限制指定日期不可选">
 <meta property="og:url" content="http://yoursite.com/2019/03/18/使用kendo-ui日期选择框限制指定日期不可选/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="需求分析:   限制双休日日期不可选 假期日不可选 三个工作日后的日期不可选(工作日需排除双休日和假期日)   使用kendo-ui可以完美实现这些要求，但是使用过程中有好多坑，不过参照我下面的写法就没问题，话不多说，直接上代码吧  首先，创建一个输入框用于kendo日期控件初始化日期选择框1&amp;lt;input id=&quot;date&quot;&amp;gt; 引入kendo-ui,由于kendo-ui是依赖于jQu">
+<meta property="og:description" content="需求分析:   限制双休日日期不可选 假期日不可选 三个工作日后的日期不可选(工作日需排除双休日和假期日)   使用kendo-ui可以完美实现这些要求，但是使用过程中有好多坑，不过参照我下面的写法就没问题，话不多说，直接上代码吧">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-18T11:58:18.964Z">
+<meta property="og:updated_time" content="2019-03-18T12:27:46.868Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用kendo-ui日期选择框限制指定日期不可选">
-<meta name="twitter:description" content="需求分析:   限制双休日日期不可选 假期日不可选 三个工作日后的日期不可选(工作日需排除双休日和假期日)   使用kendo-ui可以完美实现这些要求，但是使用过程中有好多坑，不过参照我下面的写法就没问题，话不多说，直接上代码吧  首先，创建一个输入框用于kendo日期控件初始化日期选择框1&amp;lt;input id=&quot;date&quot;&amp;gt; 引入kendo-ui,由于kendo-ui是依赖于jQu">
+<meta name="twitter:description" content="需求分析:   限制双休日日期不可选 假期日不可选 三个工作日后的日期不可选(工作日需排除双休日和假期日)   使用kendo-ui可以完美实现这些要求，但是使用过程中有好多坑，不过参照我下面的写法就没问题，话不多说，直接上代码吧">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -184,6 +184,7 @@
 </ol>
 </blockquote>
 <p>使用kendo-ui可以完美实现这些要求，但是使用过程中有好多坑，不过参照我下面的写法就没问题，话不多说，直接上代码吧</p>
+<a id="more"></a>
 <hr>
 <p>首先，创建一个输入框用于kendo日期控件初始化日期选择框<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"date"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>引入kendo-ui,由于kendo-ui是依赖于jQuery的，所以还得先引入jQuery<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"/js/jquery.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"/js/kendo.all.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>

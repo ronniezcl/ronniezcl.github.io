@@ -188,7 +188,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h3><table>
+        <a id="more"></a>
+<h3 id="background属性"><a href="#background属性" class="headerlink" title="background属性"></a>background属性</h3><table>
 <thead>
 <tr>
 <th>属性</th>
@@ -229,20 +230,17 @@
 </tr>
 <tr>
 <td>背景附着</td>
-<td>background-attachment: scroll \</td>
-<td>fixed;</td>
+<td>background-attachment: scroll / fixed;</td>
 <td>默认是scroll</td>
 </tr>
 <tr>
 <td>背景缩放（一）</td>
 <td>background-size: 50%;<br>background-size: 100px 200px;</td>
-<td>缩放为原来一半大小 \</td>
-<td>宽100px，高200px，尽量只改一个值，防止图片失真</td>
+<td>缩放为原来一半大小；宽100px，高200px，尽量只改一个值，防止图片失真</td>
 </tr>
 <tr>
 <td>背景缩放（二）</td>
-<td>background-size: cover \</td>
-<td>contain;</td>
+<td>background-size: cover / contain;</td>
 <td>cover：会自动调整缩放比列，保证图片始终填充满背景区域，移出部分会被隐藏;contain:自动调整缩放比例，保证图片完整显示，但背景可能会有部分裸露</td>
 </tr>
 </tbody>
@@ -251,7 +249,6 @@
 <p>简写方式:background: 颜色 图片 平铺 附着 位置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">	body&#123;</span><br><span class="line">		background: #000 url(img/xxx.jpg) no-repeat fixed center -25px;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <p>凹凸文字效果<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">div</span>&gt;</span>我是凸起的文字<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">div</span>&gt;</span>我是凹下的文字<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">   body &#123;</span></span><br><span class="line"><span class="undefined">       background-color: #ccc;</span></span><br><span class="line"><span class="undefined">   &#125;</span></span><br><span class="line"><span class="undefined">   div &#123;</span></span><br><span class="line"><span class="undefined">       color: #ccc;</span></span><br><span class="line"><span class="undefined">       font: 700 80px "微软雅黑";</span></span><br><span class="line"><span class="undefined">   &#125;</span></span><br><span class="line"><span class="undefined">   div:first-child &#123;</span></span><br><span class="line"><span class="undefined">       text-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;</span></span><br><span class="line"><span class="undefined">   &#125;</span></span><br><span class="line"><span class="undefined">   div:last-child &#123;</span></span><br><span class="line"><span class="undefined">       text-shadow: -1px -1px 1px #000,1px 1px 1px #fff;</span></span><br><span class="line"><span class="undefined">   &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p><img src="http://blob:http://marxi.co/5dba7e3a-394e-42bb-bd60-c9735a511eb7" alt="凹凸效果" title="凹凸文字"></p>
 
       
 

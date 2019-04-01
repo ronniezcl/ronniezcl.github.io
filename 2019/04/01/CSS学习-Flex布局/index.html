@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://zclzone.com">
-  <title>Archives | Ronnie&#39;s Blog</title>
+  <title>CSS学习-Flex布局 | Ronnie&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="江科12级，就职于景苑国际。擅长各项前端技能、后端技能。">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,全栈开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ronnie&#39;s Blog">
-<meta property="og:url" content="http://zclzone.com/archives/index.html">
+  <meta name="description" content="CSS3-Flex 布局 Flex 属性详述1. flex-direction 决定主轴的方向,即元素排列的方向，有四种方式:   row: 主轴为水平方向，元素沿主轴从左至右排列  column: 主轴为竖直方向，元素沿主轴从上至下排列  row-reverse: 主轴水平，元素从右至左排列，与 row 反向  column-reverse: 主轴竖直，元素从下至上排列，与 column 反向">
+<meta name="keywords" content="css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS学习-Flex布局">
+<meta property="og:url" content="http://zclzone.com/2019/04/01/CSS学习-Flex布局/index.html">
 <meta property="og:site_name" content="Ronnie&#39;s Blog">
-<meta property="og:description" content="江科12级，就职于景苑国际。擅长各项前端技能、后端技能。">
+<meta property="og:description" content="CSS3-Flex 布局 Flex 属性详述1. flex-direction 决定主轴的方向,即元素排列的方向，有四种方式:   row: 主轴为水平方向，元素沿主轴从左至右排列  column: 主轴为竖直方向，元素沿主轴从上至下排列  row-reverse: 主轴水平，元素从右至左排列，与 row 反向  column-reverse: 主轴竖直，元素从下至上排列，与 column 反向">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-01T14:30:14.163Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ronnie&#39;s Blog">
-<meta name="twitter:description" content="江科12级，就职于景苑国际。擅长各项前端技能、后端技能。">
+<meta name="twitter:title" content="CSS学习-Flex布局">
+<meta name="twitter:description" content="CSS3-Flex 布局 Flex 属性详述1. flex-direction 决定主轴的方向,即元素排列的方向，有四种方式:   row: 主轴为水平方向，元素沿主轴从左至右排列  column: 主轴为竖直方向，元素沿主轴从上至下排列  row-reverse: 主轴水平，元素从右至左排列，与 row 反向  column-reverse: 主轴竖直，元素从下至上排列，与 column 反向">
   
     <link rel="alternative" href="/atom.xml" title="Ronnie&#39;s Blog" type="application/atom+xml">
   
@@ -166,36 +167,179 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-CSS学习-Flex布局" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      CSS学习-Flex布局
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/01/CSS学习-Flex布局/" class="archive-article-date">
+
+        
+        <a href="/2019/04/01/CSS学习-Flex布局/" class="archive-article-date">
   	<time datetime="2019-04-01T10:53:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-01</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/01/CSS学习-Flex布局/">CSS学习-Flex布局</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="CSS3-Flex-布局"><a href="#CSS3-Flex-布局" class="headerlink" title="CSS3-Flex 布局"></a><strong><center>CSS3-Flex 布局</center></strong></h1><hr>
+<h4 id="Flex-属性详述"><a href="#Flex-属性详述" class="headerlink" title="Flex 属性详述"></a>Flex 属性详述</h4><h5 id="1-flex-direction"><a href="#1-flex-direction" class="headerlink" title="1. flex-direction"></a>1. flex-direction</h5><blockquote>
+<p>决定主轴的方向,即元素排列的方向，有四种方式:</p>
+</blockquote>
+<ul>
+<li><p>row: 主轴为水平方向，元素沿主轴从左至右排列</p>
+</li>
+<li><p>column: 主轴为竖直方向，元素沿主轴从上至下排列</p>
+</li>
+<li><p>row-reverse: 主轴水平，元素从右至左排列，与 row 反向</p>
+</li>
+<li><p>column-reverse: 主轴竖直，元素从下至上排列，与 column 反向</p>
+</li>
+</ul>
+<h5 id="2-flex-wrap"><a href="#2-flex-wrap" class="headerlink" title="2. flex-wrap"></a>2. flex-wrap</h5><blockquote>
+<p>默认情况下，item 排列在一条线上，即主轴上，flex-wrap 决定当排列不下时是否换行以及换行的方式，有三种方式|wrap|wrap-reverse</p>
+</blockquote>
+<ul>
+<li><p>nowrap: 自动缩小项目，不换行</p>
+</li>
+<li><p>wrap: 换行,第一行在上方</p>
+</li>
+<li><p>wrap-reverse: 换行，第一行在下方</p>
+</li>
+</ul>
+<h5 id="3-flex-flow"><a href="#3-flex-flow" class="headerlink" title="3. flex-flow"></a>3. flex-flow</h5><blockquote>
+<p>flex-direction 和 flex-wrap 的简写形式</p>
+</blockquote>
+<blockquote>
+<p>如：row wrap 、 column wrap-reverse 等。默认值为 row nowrap，即横向排列 不换行。</p>
+</blockquote>
+<h5 id="4-justify-content"><a href="#4-justify-content" class="headerlink" title="4. justify-content"></a>4. justify-content</h5><blockquote>
+<p>决定元素在主轴上的对齐方式，当主轴沿水平方向时,有五种方式：</p>
+</blockquote>
+<ul>
+<li><p>flex-start(默认): 左对齐</p>
+</li>
+<li><p>flex-end: 右对齐</p>
+</li>
+<li><p>center: 居中对齐</p>
+</li>
+<li><p>space-between: 两端对齐</p>
+</li>
+<li><p>space-around: 沿轴线均匀分布</p>
+</li>
+</ul>
+<h5 id="5-align-items"><a href="#5-align-items" class="headerlink" title="5. align-items"></a>5. align-items</h5><blockquote>
+<p>决定元素在交叉轴上的对齐方式，当主轴沿水平方向时，有五种方式：</p>
+</blockquote>
+<ul>
+<li><p>flex-start: 顶端对齐</p>
+</li>
+<li><p>flex-end: 底部对齐</p>
+</li>
+<li><p>center: 竖直方向上居中对齐</p>
+</li>
+<li><p>baseline: 元素第一行文字的底部对齐</p>
+</li>
+<li><p>stretch: 当元素未设置高度时，元素将和容器等高对齐</p>
+</li>
+</ul>
+<h5 id="5-align-content"><a href="#5-align-content" class="headerlink" title="5. align-content"></a>5. align-content</h5><blockquote>
+<p>该属性定义了当有多根主轴时，即 item 不止一行时，多行在交叉轴轴上的对齐方式。注意当有多行时，定义了 align-content 后，align-items 属性将失效。align-content 可能值含义如下（假设主轴为水平方向）：</p>
+</blockquote>
+<ul>
+<li><p>flex-start：左对齐</p>
+</li>
+<li><p>flex-end：右对齐</p>
+</li>
+<li><p>center：居中对齐</p>
+</li>
+<li><p>space- between：两端对齐</p>
+</li>
+<li><p>space-around：沿轴线均匀分布</p>
+</li>
+<li><p>stretch：各行将根据其 flex-grow 值伸展以充分占据剩余空间</p>
+</li>
+</ul>
+<h4 id="flex-item-属性详述"><a href="#flex-item-属性详述" class="headerlink" title="flex item 属性详述"></a>flex item 属性详述</h4><h5 id="1-order"><a href="#1-order" class="headerlink" title="1. order"></a>1. order</h5><blockquote>
+<p>der 的值是整数，默认为 0，整数越小，item 排列越靠前</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrap"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div"</span> <span class="attr">style</span>=<span class="string">"order:4"</span>&gt;</span><span class="tag">&lt;<span class="name">h2</span>&gt;</span>item 1<span class="tag">&lt;/<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div"</span> <span class="attr">style</span>=<span class="string">"order:2"</span>&gt;</span><span class="tag">&lt;<span class="name">h2</span>&gt;</span>item 2<span class="tag">&lt;/<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div"</span> <span class="attr">style</span>=<span class="string">"order:3"</span>&gt;</span><span class="tag">&lt;<span class="name">h2</span>&gt;</span>item 3<span class="tag">&lt;/<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div"</span> <span class="attr">style</span>=<span class="string">"order:1"</span>&gt;</span><span class="tag">&lt;<span class="name">h2</span>&gt;</span>item 4<span class="tag">&lt;/<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h5 id="2-flex-grow"><a href="#2-flex-grow" class="headerlink" title="2. flex-grow"></a>2. flex-grow</h5><blockquote>
+<p>定义了当 flex 容器有多余空间时，item 是否放大。默认值为 0，即当有多余空间时也不放大；可能的值为整数，表示不同 item 的放大比例，如</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrap"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div"</span> <span class="attr">style</span>=<span class="string">"flex-grow:1"</span>&gt;</span><span class="tag">&lt;<span class="name">h2</span>&gt;</span>item 1<span class="tag">&lt;/<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div"</span> <span class="attr">style</span>=<span class="string">"flex-grow:2"</span>&gt;</span><span class="tag">&lt;<span class="name">h2</span>&gt;</span>item 2<span class="tag">&lt;/<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div"</span> <span class="attr">style</span>=<span class="string">"flex-grow:3"</span>&gt;</span><span class="tag">&lt;<span class="name">h2</span>&gt;</span>item 3<span class="tag">&lt;/<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><code>即当有多余空间时item1、item2、和item3以1：2:3的比例放大。</code></p>
+<h5 id="3-flex-shrink"><a href="#3-flex-shrink" class="headerlink" title="3. flex-shrink"></a>3. flex-shrink</h5><blockquote>
+<p>定义了当容器空间不足时，item 是否缩小。默认值为 1，表示当空间不足时，item 自动缩小，其可能的值为整数，表示不同 item 的缩小比例。</p>
+</blockquote>
+<h5 id="4-flex-basis"><a href="#4-flex-basis" class="headerlink" title="4. flex-basis"></a>4. flex-basis</h5><blockquote>
+<p>项目在主轴上占据的空间，默认值为 auto。如下代码</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrap"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div"</span> <span class="attr">style</span>=<span class="string">"flex-basis:80px"</span>&gt;</span><span class="tag">&lt;<span class="name">h2</span>&gt;</span>item 1<span class="tag">&lt;/<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div"</span> <span class="attr">style</span>=<span class="string">"flex-basis:160px"</span>&gt;</span><span class="tag">&lt;<span class="name">h2</span>&gt;</span>item 2<span class="tag">&lt;/<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div"</span> <span class="attr">style</span>=<span class="string">"flex-basis:240px"</span>&gt;</span><span class="tag">&lt;<span class="name">h2</span>&gt;</span>item 3<span class="tag">&lt;/<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h5 id="5-flex"><a href="#5-flex" class="headerlink" title="5. flex"></a>5. flex</h5><blockquote>
+<p>flex 属性是 flex-grow、flex-shrink 和 flex-basis 三属性的简写总和.</p>
+</blockquote>
+<h5 id="6-align-self"><a href="#6-align-self" class="headerlink" title="6. align-self"></a>6. align-self</h5><blockquote>
+<p>align-self 属性允许 item 有自己独特的在交叉轴上的对齐方式，它有六个可能的值。默认值为 auto</p>
+</blockquote>
+<ul>
+<li><p>auto：和父元素 align-self 的值一致</p>
+</li>
+<li><p>flex-start：顶端对齐</p>
+</li>
+<li><p>flex-end：底部对齐</p>
+</li>
+<li><p>center：竖直方向上居中对齐</p>
+</li>
+<li><p>baseline：item 第一行文字的底部对齐</p>
+</li>
+<li><p>stretch：当 item 未设置高度时，item 将和容器等高对齐</p>
+</li>
+</ul>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -207,217 +351,68 @@
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/25/CSS学习-静态项目/" class="archive-article-date">
-  	<time datetime="2019-03-25T05:53:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-25</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/03/25/CSS学习-静态项目/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS学习-静态项目</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/25/CSS学习-静态项目/">CSS学习-静态项目</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CSS3-Flex-布局"><span class="toc-number">1.</span> <span class="toc-text">CSS3-Flex 布局</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Flex-属性详述"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">Flex 属性详述</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-flex-direction"><span class="toc-number">1.0.0.1.1.</span> <span class="toc-text">1. flex-direction</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-flex-wrap"><span class="toc-number">1.0.0.1.2.</span> <span class="toc-text">2. flex-wrap</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-flex-flow"><span class="toc-number">1.0.0.1.3.</span> <span class="toc-text">3. flex-flow</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-justify-content"><span class="toc-number">1.0.0.1.4.</span> <span class="toc-text">4. justify-content</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-align-items"><span class="toc-number">1.0.0.1.5.</span> <span class="toc-text">5. align-items</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-align-content"><span class="toc-number">1.0.0.1.6.</span> <span class="toc-text">5. align-content</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#flex-item-属性详述"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">flex item 属性详述</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-order"><span class="toc-number">1.0.0.2.1.</span> <span class="toc-text">1. order</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-flex-grow"><span class="toc-number">1.0.0.2.2.</span> <span class="toc-text">2. flex-grow</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-flex-shrink"><span class="toc-number">1.0.0.2.3.</span> <span class="toc-text">3. flex-shrink</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-flex-basis"><span class="toc-number">1.0.0.2.4.</span> <span class="toc-text">4. flex-basis</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-flex"><span class="toc-number">1.0.0.2.5.</span> <span class="toc-text">5. flex</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-align-self"><span class="toc-number">1.0.0.2.6.</span> <span class="toc-text">6. align-self</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/23/CSS学习-background属性/" class="archive-article-date">
-  	<time datetime="2019-03-23T00:53:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-23</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/23/CSS学习-background属性/">CSS学习-background属性</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/23/CSS学习-选择器/" class="archive-article-date">
-  	<time datetime="2019-03-23T00:53:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/23/CSS学习-选择器/">CSS学习-选择器</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/23/CSS学习-标签显示模式/" class="archive-article-date">
-  	<time datetime="2019-03-23T00:03:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/23/CSS学习-标签显示模式/">CSS学习-标签显示模式</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/18/使用kendo-ui日期选择框限制指定日期不可选/" class="archive-article-date">
-  	<time datetime="2019-03-18T11:52:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/18/使用kendo-ui日期选择框限制指定日期不可选/">使用kendo-ui日期选择框限制指定日期不可选</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">web</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">kendo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -440,8 +435,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
